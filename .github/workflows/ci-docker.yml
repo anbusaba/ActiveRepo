@@ -45,6 +45,6 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           context: .
-          file: ./ActiveRepo/Dockerfile
+          file: ./samplerepo/Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/samplerepo:latest, ${{ secrets.DOCKER_USERNAME }}/sourceimg:latest, ${{ github.run_number }}
