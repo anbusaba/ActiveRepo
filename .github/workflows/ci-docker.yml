@@ -45,6 +45,6 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
-          file: ./MyMicroservice/Dockerfile
+          file: ./dockerdemo/Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/dockerdemo:latest, ${{ secrets.DOCKER_USERNAME }}/dockerdemo:${{ github.run_number }}
